@@ -1,0 +1,156 @@
+/* Estilos gerais para o cadastro */
+.Cadastro {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Bosch Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #FFFFFF;
+  opacity: 0; /* Começa invisível */
+  animation: fadeInUp 1.5s forwards;
+}
+
+/* Animação: fade-in e slide-up */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Começa um pouco abaixo */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Atinge a posição normal */
+  }
+}
+/* Header com logo */
+.cadastroHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.logo img {
+  max-width: 150px;
+  height: auto;
+}
+
+/* Navbar */
+.Cadastronavbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/* Estilo dos links no menu de navegação */
+.navbarnav {
+  display: flex;
+  gap: 25px;
+}
+
+/* Links da navbar */
+.navbar-link {
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+  transition: color 0.3s;
+}
+
+/* Efeito de hover nos links */
+.navbar-link:hover {
+  color: #000;
+}
+
+/* Container principal */
+.cadastroContainer {
+  max-width: 500px;  /* Aumenta o tamanho do formulário para 600px */
+  padding: 40px;     /* Aumenta o padding para criar mais espaço interno */
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transform: translate(100%, 20%);
+}
+
+/* Título do formulário */
+.cadastroContainer h2 {
+  font-size: 2.2rem;  /* Aumenta o tamanho do título */
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 30px; /* Aumenta o espaçamento entre o título e os inputs */
+  text-align: center;
+}
+
+/* Grupo de Inputs */
+.input-group {
+  margin-bottom: 25px;  /* Aumenta o espaçamento entre os campos */
+  text-align: left;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilo das labels */
+.input-group label {
+  font-size: 16px;
+  font-weight: lighter; /* Deixa a fonte mais leve */
+  color: #000000;
+  margin-bottom: 10px;
+  text-align: left;  /* Alinha as labels à esquerda */
+  width: 100%;
+}
+
+/* Estilo dos inputs */
+.cadastroContainer input {
+  width: 100%;
+  padding: 14px;  /* Aumenta o padding para um input mais espaçoso */
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+/* Estilo dos inputs ao focar */
+.cadastroContainer input:focus {
+  border-color: #000;
+  outline: none;
+}
+
+/* Botão de Cadastro */
+.botaoCadastrar {
+  width: 30%;    /* O botão tem largura de 50% do formulário */
+  background-color: #000;
+  color: #FFFFFF;
+  font-size: 20px;  /* Ajuste do tamanho da fonte */
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 20px;  /* Espaçamento entre o botão e os inputs */
+}
+
+/* Efeito do botão ao passar o mouse */
+.botaoCadastrar:hover {
+  background-color: #444;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+  .cadastroContainer {
+    max-width: 50%;  /* Formulário ocupa 90% da tela em dispositivos móveis */
+    padding: 10px;
+  }
+
+  .cadastroContainer h2 {
+    font-size: 1.8rem;  /* Ajusta o tamanho do título */
+  }
+
+  .input-group label,
+  .cadastroContainer input,
+  .botaoCadastrar {
+    font-size: 14px;  /* Diminui o tamanho da fonte em telas menores */
+  }
+}

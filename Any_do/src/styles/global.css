@@ -1,0 +1,32 @@
+body {
+  font-family: "boschsans", "Helvetica Neue", Helvetica, Arial, sans-serif; 
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #333;
+}
+
+:root {
+  --purple-35: #8A3274;
+  --blue-80: #9DC9FF;
+  --blue-70: #56B0FF;
+  --blue-65: #00A4FD;
+  --blue-50: #007BC0;
+  --blue-45: #006EAD;
+  --blue-40: #00629A;
+  --blue-30: #004975;
+  --blue-20: #003253;
+  --gray-95: #EFF1F2;
+  --gray-80: #C1C7CC;
+  --gray-65: #979EA4;
+  --gray-50: #71767C;
+  --gray-40: #595E62;
+  --gray-35: #4E5256;
+  --gray-30: #43464A;
+  --branco: #FFFFFF;
+  --preto: #000000;
+  --atencao: #FFCF00;
+  --erro: #ED0007;
+  --feedback-positivo: #00884A;
+  --urls-hiperlinks: #007BC0;
+}

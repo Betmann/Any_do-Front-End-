@@ -1,0 +1,145 @@
+/* Estilos gerais para a Nova Atividade */
+.NovaAtividade2 {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Bosch Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #FFFFFF;
+  opacity: 0; /* Começa invisível */
+  animation: fadeInUp 1.5s forwards;
+}
+
+/* Animação: fade-in e slide-up */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Começa um pouco abaixo */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Atinge a posição normal */
+  }
+}
+
+/* Header com logo */
+.NovaAtividadeHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.logo img {
+  max-width: 150px;
+  height: auto;
+}
+
+/* Navbar */
+.NovaAtividadenavbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/* Estilo dos links no menu de navegação */
+.NovaAtividadenavbarnav {
+  display: flex;
+  gap: 25px;
+}
+
+/* Links da navbar */
+.navbar-link {
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+  transition: color 0.3s;
+}
+
+/* Efeito de hover nos links */
+.navbar-link:hover {
+  color: #000;
+}
+
+/* Container principal */
+.NovaAtividadeContainer {
+  max-width: 800px;  /* Tamanho do formulário */
+  padding: 50px;     /* Padding para criar mais espaço interno */
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: -120px;
+  margin-left: -450px;  /* Alinha o formulário à esquerda com margem */
+  transform: translate(100%, 20%);
+}
+
+/* Título do formulário */
+.NovaAtividadeContainer h2 {
+  font-size: 2.2rem;  /* Aumenta o tamanho do título */
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 30px; /* Aumenta o espaçamento entre o título e os inputs */
+  text-align: left;
+}
+
+/* Grupo de Inputs */
+.inputNovaAtividade {
+  margin-bottom: 20px;  /* Reduz o espaçamento entre os campos para melhorar o layout */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinha todos os inputs e labels à esquerda */
+}
+
+/* Estilo das labels */
+.inputNovaAtividade label {
+  font-size: 16px;
+  font-weight: normal; /* Mantém a fonte mais leve e legível */
+  color: #333;  /* Cor um pouco mais suave para a label */
+  margin-bottom: 8px; /* Espaçamento entre a label e o campo de input */
+  margin-left: 4px;   /* Mantém a label levemente afastada da borda esquerda */
+  width: 100%;
+  text-align: left;    /* Alinha o texto da label à esquerda */
+}
+
+/* Estilo dos inputs, textarea e select */
+.NovaAtividadeContainer input,
+.NovaAtividadeContainer textarea,
+.NovaAtividadeContainer select {
+  width: 100%;  /* Garante que os campos de input, textarea e select ocupem toda a largura */
+  padding: 12px; /* Adiciona um padding confortável */
+  font-size: 16px; /* Tamanho da fonte consistente em todos os campos */
+  border: 1px solid #ccc;  /* Cor suave para as bordas */
+  margin-top: 5px; /* Espaçamento entre a label e o campo de input */
+  transition: border-color 0.3s; /* Suaviza a transição de foco */
+}
+
+/* Estilo dos inputs, textarea e select ao focar */
+.NovaAtividadeContainer input:focus,
+.NovaAtividadeContainer textarea:focus,
+.NovaAtividadeContainer select:focus {
+  border-color: #000;  /* Muda a borda para preto ao focar */
+  outline: none; /* Remove o contorno padrão ao focar */
+}
+
+/* Botão de Adicionar */
+.botaoNovaAtividade {
+  width: 40%;    /* O botão ocupa toda a largura do formulário */
+  background-color: #000;
+  color: #FFFFFF;
+  font-size: 20px;  /* Ajuste do tamanho da fonte */
+  padding: 14px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 20px;  /* Espaçamento entre o botão e os campos */
+}
+
+/* Efeito do botão ao passar o mouse */
+.botaoNovaAtividade:hover {
+  background-color: #444;
+}

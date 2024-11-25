@@ -1,0 +1,126 @@
+/* Estilos gerais */
+.apresentacao {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "boschsans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #FFFFFF;
+  opacity: 0; /* Começa invisível */
+  animation: fadeInUp 1.5s forwards; /* Aplica a animação de fade-in e deslizar para cima */
+}
+
+/* Animação: fade-in e slide-up */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Começa um pouco abaixo */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Atinge a posição normal */
+  }
+}
+
+/* Header */
+.apresentacao-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #FFFFFF;
+}
+
+.logo {
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.LogoAnyDo {
+  margin-top: 5px;
+  width: 120px;
+  height: auto;
+}
+
+.header-buttons .btn {
+  margin-left: 1rem;
+  background-color: #000000;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.header-buttons .btn:hover {
+  background-color: #fafafa;
+  color: #fff;
+}
+
+/* Main Content */
+.apresentacao-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem;
+  gap: 1rem;
+  opacity: 0; /* Começa invisível */
+  animation: fadeInUp 1.5s forwards 0.5s; /* Aplica a animação com delay para o conteúdo principal */
+}
+
+.content-left {
+  flex: 1;
+  max-width: 600px;
+  margin-top: -160px;
+}
+
+.content-left h1 {
+  font-family: 'Vollkorn', serif; 
+  font-size: 5rem;
+  color: #000000;
+}
+
+.content-left p {
+  font-family: 'Vollkorn', serif;
+  font-size: 1.4rem;
+  color: #000000;
+  font-weight: lighter;
+}
+
+.content-right {
+  flex: 1;
+  max-width: 600px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.content-image {
+  width: 760px;
+  height: auto;
+  margin-left: -160px;
+}
+
+/* Central Button */
+.content-center {
+  width: 98%;
+  display: flex;
+  margin-top: -105px;
+  justify-content: center;
+  opacity: 0; /* Começa invisível */
+  animation: fadeInUp 1.5s forwards 1s; /* Aplica a animação com delay para o botão */
+}
+
+.btn-start {
+  display: inline-block;
+  background-color: #000000;
+  color: #FFFFFF;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.btn-start:hover {
+  background-color: #333333;
+}
