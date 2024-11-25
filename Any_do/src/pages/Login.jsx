@@ -1,7 +1,7 @@
 import { useState } from "react";
-import "../styles/Cadastro.css";  // Estilo permanece o mesmo
-import { Link } from "react-router-dom";  // Link para navegação
-import Logo from "../assets/Logo.svg";  // Logo da aplicação
+import "../styles/Cadastro.css";  
+import { Link } from "react-router-dom";  
+import Logo from "../assets/Logo.svg";  
 
 function Login() {
   const [form, setForm] = useState({ name: "", email: "" });
@@ -18,8 +18,8 @@ function Login() {
   };
 
   return (
-    <div className="Cadastro"> {/* A classe "Cadastro" pode ser mantida */}
-      <header className="cadastroHeader"> {/* Mantemos a estrutura do cabeçalho */}
+    <div className="Cadastro"> 
+      <header className="cadastroHeader"> 
         <div className="logo">
           <img src={Logo} alt="Logo Any.do" className="LogoAnyDo" />
         </div>
@@ -47,8 +47,8 @@ function Login() {
         </nav>
       </header>
 
-      <div className="cadastroContainer"> {/* Mantemos o nome da classe */}
-        <h2>Login</h2> {/* Título ajustado para "Login" */}
+      <div className="cadastroContainer"> 
+        <h2>Login</h2> 
         <form onSubmit={handleSubmit}>
           <div className="input-group">
             <label htmlFor="name">Nome:</label>

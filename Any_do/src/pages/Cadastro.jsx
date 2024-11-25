@@ -36,7 +36,6 @@ function Cadastro() {
         </div>
         <nav className="Cadastronavbar">
           <div className="navbarnav">
-            {/* Usando Link para navegação */}
             <Link to="/" className="navbar-link">
               Home
             </Link>

@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react"; 
-import "../styles/NovaAtividade.css";  // Usando o mesmo CSS
-import { Link } from "react-router-dom"; // Importando Link para navegação
+import "../styles/NovaAtividade.css";  
+import { Link } from "react-router-dom"; 
 import axios from "axios";
-import Logo from "../assets/Logo.svg";  // Logo da aplicação
+import Logo from "../assets/Logo.svg";  
 
 function NovaAtividade() {
   const [usuarios, setUsuarios] = useState([]);
@@ -14,21 +14,21 @@ function NovaAtividade() {
     status: "a_fazer",
   });
 
-  // Carrega a lista de usuários da API quando o componente é montado
+  
   useEffect(() => {
     axios.get("http://localhost:8000/api/users/")
       .then(response => setUsuarios(response.data))
       .catch(error => console.error("Erro ao carregar usuários:", error));
   }, []);
 
-  // Função para lidar com mudanças nos campos do formulário
+  
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
     
   };
 
-  // Função para enviar os dados do formulário para a API
+  
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Dados enviados:", formData)
@@ -66,7 +66,7 @@ function NovaAtividade() {
       <div className="NovaAtividadeContainer">
         <h2>Nova Atividade</h2>
         <form onSubmit={handleSubmit}>
-          {/* Campo para escolher o usuário */}
+
           <div className="inputNovaAtividade">
             <label>Usuário:</label>
             <select name="usuario" value={formData.usuario} onChange={handleChange} required>
@@ -77,19 +77,19 @@ function NovaAtividade() {
           </select>
           </div>
 
-          {/* Campo de descrição da tarefa */}
+
           <div className="inputNovaAtividade">
             <label htmlFor="descricao">Descrição da Tarefa:</label>
             <textarea name="descricao" value={formData.descricao} onChange={handleChange} required />
           </div>
 
-          {/* Campo para o setor */}
+
           <div className="inputNovaAtividade">
             <label htmlFor="setor">Setor:</label>
             <input type="text" name="setor" value={formData.setor} onChange={handleChange} required />
           </div>
 
-          {/* Campo de prioridade */}
+       
           <div className="inputNovaAtividade">
             <label htmlFor="prioridade">Prioridade:</label>
             <select name="prioridade" value={formData.prioridade} onChange={handleChange} required>
@@ -99,7 +99,6 @@ function NovaAtividade() {
             </select>
           </div>
 
-          {/* Campo de status */}
           <div className="inputNovaAtividade">
             <label htmlFor="status">Status:</label>
             <select name="status" value={formData.status} onChange={handleChange} required>
@@ -109,7 +108,6 @@ function NovaAtividade() {
             </select>
           </div>
 
-          {/* Botão Adicionar */}
           <div className="NovaAtividade">
             <button type="submit" className="botaoNovaAtividade">
               Adicionar

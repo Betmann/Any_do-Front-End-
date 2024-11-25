@@ -6,7 +6,7 @@ import "../styles/Apresentacao.css";
 function Apresentacao() {
   return (
     <div className="apresentacao">
-      <header className="apresentacao-header">
+      <header className="apresentacaoheader">
         <div className="logo">
           <img src={Logo} alt="Logo Any.do" className="LogoAnyDo" />
         </div>

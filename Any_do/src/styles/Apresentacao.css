@@ -22,7 +22,7 @@
 }
 
 /* Header */
-.apresentacao-header {
+.apresentacaoheader {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -96,16 +96,16 @@
 }
 
 .content-image {
-  width: 760px;
+  width: 400%;
   height: auto;
-  margin-left: -160px;
+  margin-left: -100px;
 }
 
 /* Central Button */
 .content-center {
   width: 98%;
   display: flex;
-  margin-top: -105px;
+  margin-top: -220px;
   justify-content: center;
   opacity: 0; /* Começa invisível */
   animation: fadeInUp 1.5s forwards 1s; /* Aplica a animação com delay para o botão */

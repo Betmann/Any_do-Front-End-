@@ -73,7 +73,7 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   text-align: center;
   margin-top: -120px;
-  margin-left: -450px;  /* Alinha o formulário à esquerda com margem */
+  margin-left: -610px;  /* Alinha o formulário à esquerda com margem */
   transform: translate(100%, 20%);
 }
 
